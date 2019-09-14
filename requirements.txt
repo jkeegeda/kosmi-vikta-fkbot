@@ -1,4 +1,3 @@
-vk_api.longpoll
 vk_api
 random
 bs4
