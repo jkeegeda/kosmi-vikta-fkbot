@@ -1,0 +1,8 @@
+vk_api.longpoll
+vk_api
+random
+bs4
+BeautifulSoup
+requests
+time
+os
