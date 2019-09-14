@@ -1,0 +1,1 @@
+# kosmi-vikta-fkbot
