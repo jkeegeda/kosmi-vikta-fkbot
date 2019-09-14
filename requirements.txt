@@ -1,6 +1,5 @@
 vk_api
 bs4
-BeautifulSoup
 requests
 time
 os
