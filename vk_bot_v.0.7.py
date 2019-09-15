@@ -30,7 +30,7 @@ while True:
                     vk.messages.send(
                         # chat_id= event.chat_id,
                         chat_id=48,
-                        message="старт1",
+                        message="старт",
                         random_id=random.randint(0, 10000000000000000)
                     )
                 else:
