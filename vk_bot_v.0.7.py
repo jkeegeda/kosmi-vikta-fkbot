@@ -18,7 +18,7 @@ while True:
             # print(str(event.text))                                                #написать текст этого сообщения
             if event.to_me:
                 q = str(event.text)  # q присваиваем текст из события , а именно из сообщения
-                print(q)
+                # print(q)
                 # print("---" * 10)
 
                 #в случае если викторина прервана из-за того что не найдено ответов на 3 вопроса подряд:
@@ -41,9 +41,9 @@ while True:
                 mask_num = len(mask)  # узнаем количество букв ответа из подсказки
                 # print(mask_num)
                 listmask = list(mask)
-                #print(listmask[0])
+                # print(listmask[0])
                 maska = str(listmask[0]) + str('*'*int(len(mask)-1))
-                print(maska)
+                # print(maska)
 
                 q = q.replace('&quot;', "")  # убираем ковычки ибо не читаемая кодировка символа
                 q = q.split(": ", 1)[0]  # делим предложение на 2 части (разделитель,что в скобках). Оставляем 1 часть(то что до разделителя)
@@ -66,7 +66,7 @@ while True:
                         soap = BeautifulSoup(r.text, "html.parser")  # парсим сайт который нам выдался по запросу
 
                         msgs = soap.h3.text  # выводим текст из первого блока с тегом h3, это и есть наш ответ
-                        print(msgs)
+                        # print(msgs)
 
 
 
