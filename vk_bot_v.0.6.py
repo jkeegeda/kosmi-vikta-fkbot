@@ -37,6 +37,8 @@ while True:
                 mask = mask.replace(' ', '')  # убираем пробелы
                 mask_num = len(mask)  # узнаем количество букв ответа из подсказки
                 # print(mask_num)
+                listmask = list(mask)
+                maska = str(listmask[0]) + str('*'*int(len(mask)-1))
 
 
                 q = q.replace('&quot;', "")  # убираем ковычки ибо не читаемая кодировка символа
@@ -53,7 +55,7 @@ while True:
                         q = str(q)  # преобразовываем list в строку
                         q = q.replace(" ", "+")  # заменяем пробелы в строке на плюсы
                         # print(q)
-                        zapros = base_url + str("*" * mask_num) + '&d' + 'ef=' + str(q)  # создаем url запроса состоящего из маски и определения слова
+                        zapros = base_url + maska + '&d' + 'ef=' + str(q)  # создаем url запроса состоящего из маски и определения слова
                         # print(zapros)
                         r = requests.get(zapros)  # делаем запрос в виде url + наш вопрос
 
